@@ -3,6 +3,7 @@ Q1:
 Write a function called isMyAgeAndExpEnough
 that takes two parameters an age and years of experince
 
+
 1- if your age grater than or equal to 25 and less than 30
 and the exp grater than or equal to 5
 return "you are awesome"
@@ -39,7 +40,20 @@ isMyAgeAndExpEnough(35,1)
 
 
 
+function isMyAgeAndExpEnough(age,years) {
+if (age>=25&&age<30&& years>=5)
+return "you are awesom"
+else if (age >=30&&years>=5)
+return "you are good"
+else if (age >=25 && years<5 && years>2)
+return "dont worry you need to work on your self more "
+else if (age<=24)
+return "you still young"
+else if (years<=2)
+return "you need more exp"
 
+}
+isMyAgeAndExpEnough(25,4)
 
 
 
@@ -67,9 +81,17 @@ countDown(7)
 
 */
 
+function countDown(num){
+if (num===0)
+return "done"
+
+return  num + " ," + countDown(num-1)
 
 
 
+}
+
+countDown (5)
 
 
 
